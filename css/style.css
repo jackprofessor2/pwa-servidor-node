@@ -1,0 +1,137 @@
+/** style.css */
+
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background: #eee;
+    cursor: url(../images/Pointer.png), auto;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    width: 100%;
+    height: 40px;
+}
+
+p {
+    color: #999;
+}
+
+.logo {
+    float: left;
+    left: 0;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu {
+    float: right;
+    right: 0;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+content {
+    width: 100%;
+    position: absolute;
+    margin-top: 45px;
+    padding: 20px;
+}
+
+input {
+    height: 40px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    background: #fff;
+    border: 1px solid #069;
+    color: #069;
+    padding-left: 5px;
+}
+
+input[type="text"]:focus {
+    background: rgba(255, 255, 0, 0.2);
+}
+
+button, input[type="submit"] {
+    background: #069;
+    color: #fff;
+}
+
+button, input[type="submit"]:hover {
+    background: #068;
+    color: #fff;
+    cursor: url(../images/Save.png), auto;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px dashed #333;
+    background: #f5f5f5;
+    color: #069;
+    padding: 20px 0;
+    padding-left: 5px;
+}
+
+li:hover {
+    cursor: url(../images/Trash.png), auto;
+}
+
+small {
+    color: #ccc;
+}
+
+footer {
+    background: #069;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: .5em;
+}
+
+.row {
+    display: flex;
+}
+
+.col-1 {
+    flex-grow: 1;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.col-3 {
+    flex-grow: 3;
+}

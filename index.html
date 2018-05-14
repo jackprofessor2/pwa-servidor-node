@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="iNotes">
+
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#607d8b">
+    
+    <meta name="theme-color" content="#607d8b">
+
+    <title>PWA iNOTE</title>
+
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+
+    <!-- manifest.json -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
+
+        <nav class="menu">
+            <a href="javascript:;" title="Executar servidor">
+                <img src="images/option.png" alt="menu" />
+            </a>
+        </nav> 
+    </header>
+
+    <!-- content -->
+    <content>
+        <p>Adicione suas anotações</p>
+
+        <form id="form-add-note">
+            <div class="row">
+                <input class="col-2" type="text" placeholder="Sua anotação..." />
+                <input class="col-1" type="submit" value="+" />
+            </div>
+        </from>
+
+        <ul id="notes">
+            <li id="nota">Nota</li>
+        </ul>
+        <small>Clique no card para remover</small>
+    </content>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; iNOTE 2018, Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- object.observe.polyfill.js -->
+    <script src="js/object.observe.polyfill.js"></script>
+
+    <!-- array.observe.polyfill.js -->
+    <script src="js/array.observe.polyfill.js"></script>
+
+    <!-- scripts.js -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
