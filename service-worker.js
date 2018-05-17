@@ -1,7 +1,7 @@
 let cacheName = 'iNotes-v1';
 let filesToCache = [
     'servidor.js',
-    '/',
+    './',
     'index.html',
     'css/style.css',
     'js/array.observe.polyfill.js',
